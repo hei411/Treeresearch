@@ -16,11 +16,11 @@ void findcanonical(int treenum, int nodenum){
 		childrencanonical.push_back(canonical[treenum][children[treenum][nodenum][i]]);
 	}
 	sort(childrencanonical.begin(),childrencanonical.end());
-	canonical[treenum][nodenum]=label[treenum][nodenum]+"(";
+	canonical[treenum][nodenum]=label[treenum][nodenum]+"0";
 	for(int i=0;i<childrencanonical.size();i++){
 		canonical[treenum][nodenum]=canonical[treenum][nodenum]+childrencanonical[i];
 	}
-	canonical[treenum][nodenum]=canonical[treenum][nodenum]+")";
+	canonical[treenum][nodenum]=canonical[treenum][nodenum]+"1";
 }
 int main(){
 	ios::sync_with_stdio(false);
