@@ -4,10 +4,10 @@ using namespace std;
 int numtrees, numnodes;
 //The sizes of the arrays are changed depending on the size of the trees used for the test data. 
 //Note that creating variables, especially large arrays takes time.
-string label[1000+1][100+1];
-string canonical[1000+1][100+1];
-vector<int> children[1000+1][100+1];
-int isroot[1000+1][100+1];
+string label[1000+1][1000+1];
+string canonical[1000+1][1000+1];
+vector<int> children[1000+1][1000+1];
+int isroot[1000+1][1000+1];
 int root[1000+1];
 void findcanonical(int treenum, int nodenum){
 	vector<string> childrencanonical;
